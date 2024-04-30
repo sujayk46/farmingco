@@ -1,0 +1,46 @@
+@import '@fontsource/roboto/100.css'; /* Thin */
+@import '@fontsource/roboto/300.css'; /* Light */
+@import '@fontsource/roboto/400.css'; /* Normal weight */
+@import '@fontsource/roboto/500.css'; /* Medium */
+@import '@fontsource/roboto/700.css'; /* Bold */
+@import '@fontsource/montserrat/100.css'; /* Thin */
+@import '@fontsource/montserrat/200.css'; /* Extra-light */
+@import '@fontsource/montserrat/300.css'; /* Light */
+@import '@fontsource/montserrat/400.css'; /* Normal weight */
+@import '@fontsource/montserrat/500.css'; /* Medium */
+@import '@fontsource/montserrat/600.css'; /* Semi-bold */
+@import '@fontsource/montserrat/700.css'; /* Bold */
+@import '@fontsource/montserrat/800.css'; /* Extra-bold */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Roboto, Montserrat,Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.GradientPrimary {
+  @apply bg-gradient-to-r from-tertiary  to-primary;
+}
+
+.GradientSecondary {
+  @apply bg-gradient-to-r from-accent  to-tertiary;
+}
+
