@@ -6,9 +6,10 @@ import { StyledEngineProvider, ThemeProvider } from "@mui/material";
 //File imports
 import '../styles/App.css'
 import '../styles/index.css'
-import Demo from '../pages/demo'
 import theme from '../configs/mui/theme'
 import { store } from "../store/store.init";
+import SplashScreen from "../pages/landing-page/SplashScreen";
+import KnowUs from "../pages/landing-page/KnowUs";
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
         <StyledEngineProvider injectFirst>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Demo />} />
+              <Route path="/" element={<SplashScreen />} />
+              <Route path="/knowus" element={<KnowUs />} />
             </Routes>
           </BrowserRouter>
         </StyledEngineProvider>

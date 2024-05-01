@@ -8,9 +8,15 @@ export default {
     colors: {
       primary: '#F48932',
       secondary: '#0FA157',
-      tertiary: '#FDE416',
-      accent: '#95BC2D',
-      marron: {
+      tertiary: {
+        pri:'#FDE416',
+        sec:'#F9B824'
+      },
+      accent: {
+        pri:'#95BC2D',
+        sec: 'rgba(169, 208, 68,0.4)',
+      },
+      maroon: {
         pri: '#683023',
         sec: '#AB4721',
         acc: '#E8E4D1',
@@ -40,6 +46,12 @@ export default {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'], // Define Roboto font family
         montserrat: ['Montserrat', 'sans-serif'], // Montserrat as paired font
+      },
+      backgroundImage: {
+        'spices-img': "url('./src/assets/images/spices.jpg')",
+      },
+      backgroundOpacity: {
+        35: '0.35', // Custom background opacity for 35% transparency
       },
     },
   },

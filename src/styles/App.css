@@ -1,42 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  /* Primary colors */
+  --primary: #F48932;
+  --secondary: #0FA157;
+
+  /* Tertiary colors */
+  --tertiary-pri: #FDE416;
+  --tertiary-sec: #F9B824;
+
+  /* Accent colors */
+  --accent-pri: #95BC2D;
+  --accent-sec: rgba(169, 208, 68, 0.4);
+
+  /* Maroon colors */
+  --maroon-pri: #683023;
+  --maroon-sec: #AB4721;
+  --maroon-acc: #E8E4D1;
+
+  /* Ash colors */
+  --ash-pri: #363435;
+  --ash-sec: #FFFFFF;
+  --ash-acc: #AAA7A5;
+
+  /* Brown colors */
+  --brown-pri: #93642C;
+  --brown-sec: #4E350D;
+  --brown-acc: #D1C6AA;
+
+  /* Lime colors */
+  --lime-pri: #9FC94C;
+  --lime-sec: #A1CA48;
+  --lime-acc: #F4F3DC;
+
+  /* Gold colors */
+  --gold-pri: #EEC628;
+  --gold-sec: #DBB51C;
+  --gold-acc: #F4F3DB;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.bg-image {
+  background-size: 100% 100%;
 }
 
-@keyframes logo-spin {
+.typing-effect {
+  overflow: hidden; /* Ensure text doesn't overflow */
+  border-right: 0.15em solid var(--primary); /* Optional cursor effect */
+  white-space: nowrap; /* Keep text on one line */
+  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0; /* Start with no text */
   }
   to {
-    transform: rotate(360deg);
+    width: 100%; /* Full text visible */
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@keyframes blink-caret {
+  from {
+    border-color: transparent; /* Blink effect */
+  }
+  to {
+    border-color: var(--primary);
   }
 }
 
-.card {
-  padding: 2em;
+.triangle {
+  width: 0; /* No width */
+  height: 0px; /* No height */
+  border-left: 380px solid transparent; /* Transparent left border */
+  border-right: 480px solid transparent; /* Transparent right border */
+  border-top: 160px solid var(--primary); /* Blue bottom border */
 }
 
-.read-the-docs {
-  color: #888;
+.triangle-wrapper {
+  position: relative; /* Allows positioning of the triangle and text */
+  text-align: center; /* Centers text horizontally */
+}
+
+.color-white {
+  color: white;
+}
+
+.h-full-180 {
+  height: calc(100vh - 180px); /* Calculated height */
 }

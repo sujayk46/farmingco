@@ -26,6 +26,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: none !important;
 }
 
 body {
@@ -37,10 +38,19 @@ body {
 }
 
 .GradientPrimary {
-  @apply bg-gradient-to-r from-tertiary  to-primary;
+  @apply bg-gradient-to-r from-tertiary-sec  to-primary;
 }
 
 .GradientSecondary {
-  @apply bg-gradient-to-r from-accent  to-tertiary;
+  @apply bg-gradient-to-r from-accent-sec  to-tertiary-pri;
 }
+
+.Title {
+  @apply font-roboto font-extrabold text-[4vw] text-secondary;
+}
+
+.SubTitle {
+  @apply font-montserrat font-semibold text-[1.5vw];
+}
+
 
