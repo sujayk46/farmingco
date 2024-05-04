@@ -2,6 +2,7 @@
   /* Primary colors */
   --primary: #F48932;
   --secondary: #0FA157;
+  --base: #EFF4F7;
 
   /* Tertiary colors */
   --tertiary-pri: #FDE416;
@@ -37,7 +38,9 @@
   --gold-acc: #F4F3DB;
 }
 
-
+body {
+  background-color: white;
+}
 .bg-image {
   background-size: 100% 100%;
 }
@@ -67,23 +70,45 @@
   }
 }
 
-.triangle {
-  width: 0; /* No width */
-  height: 0px; /* No height */
-  border-left: 380px solid transparent; /* Transparent left border */
-  border-right: 480px solid transparent; /* Transparent right border */
-  border-top: 160px solid var(--primary); /* Blue bottom border */
-}
-
-.triangle-wrapper {
-  position: relative; /* Allows positioning of the triangle and text */
-  text-align: center; /* Centers text horizontally */
+header {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .color-white {
   color: white;
 }
 
-.h-full-180 {
-  height: calc(100vh - 180px); /* Calculated height */
+.color-black {
+  color: black;
+}
+
+.banner-animation {
+  box-shadow:  5px 15px 15px -5px rgba(0, 0, 0, 0.4);
+  animation: biani 4.5s linear infinite alternate;
+}
+
+@keyframes biani {
+  0% {
+      border-radius: 40% 52% 57% 43% / 34% 44% 56% 66%;
+  }
+  25% {
+      border-radius: 56% 38% 64% 36% / 34% 55% 45% 66%;
+  }
+  50% {
+      border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+  }
+  100% {
+      border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+  }
+}
+
+/* Override the default button width in SweetAlert2 */
+.swal2-styled {
+  min-width: 100px; 
+  border: none !important;/* Increase button width */
+  outline: none;
 }

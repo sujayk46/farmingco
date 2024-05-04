@@ -37,6 +37,10 @@ body {
   min-height: 100vh;
 }
 
+.h-full-80 {
+  height: calc(100vh - 80px); /* Calculated height */
+}
+
 .GradientPrimary {
   @apply bg-gradient-to-r from-tertiary-sec  to-primary;
 }
@@ -46,11 +50,23 @@ body {
 }
 
 .Title {
-  @apply font-roboto font-extrabold text-[4vw] text-secondary;
+  @apply font-roboto font-extrabold text-2xl md:text-2xl lg:text-5xl  text-secondary;
 }
 
 .SubTitle {
-  @apply font-montserrat font-semibold text-[1.5vw];
+  @apply font-montserrat font-semibold pt-3 pb-6  text-4xl;
+}
+
+.NavBarItems {
+  @apply mr-9 w-fit font-medium lg:hover:scale-125 hover:-translate-y-1 transition ease-in-out delay-75 duration-100 font-montserrat;
+}
+
+.NavDrawerItems {
+  @apply p-5 md:font-bold text-3xl md:text-4xl  ;
+}
+
+.active {
+  @apply text-primary font-bold;
 }
 
 

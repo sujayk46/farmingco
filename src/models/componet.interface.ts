@@ -8,3 +8,15 @@ export interface IDropletButtonProps {
     Icon: FC; 
     iconStyle?: CSSProperties; 
 }
+
+export interface IProductCardProps {
+    img: string;
+    description: string;
+    name: string;
+    subName: string;
+    price: number;
+    originalPrice: number;
+    discount: number; 
+    onClick: () => void;
+}
+  

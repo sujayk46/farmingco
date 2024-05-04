@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     colors: {
+      base: '#EFF4F7',
+      white: '#ffff',
       primary: '#F48932',
       secondary: '#0FA157',
       tertiary: {
@@ -15,6 +17,7 @@ export default {
       accent: {
         pri:'#95BC2D',
         sec: 'rgba(169, 208, 68,0.4)',
+        ter: 'rgb(132 204 22)'
       },
       maroon: {
         pri: '#683023',
@@ -49,9 +52,13 @@ export default {
       },
       backgroundImage: {
         'spices-img': "url('./src/assets/images/spices.jpg')",
+        'texture-img': "url('./src/assets/images/white-wood-texture.jpg')",
       },
       backgroundOpacity: {
         35: '0.35', // Custom background opacity for 35% transparency
+      },
+      height: {
+        'screen-minus-80': 'calc(100vh - 80px)', // custom class to deduct 50px from 100vh
       },
     },
   },
