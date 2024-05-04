@@ -18,7 +18,7 @@ const transitionConfig = {
 
 const Home = () => {
     const [data, setData] = useState([{}]);
-    const productsSectionRef = useRef(null);
+    const productsSectionRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         setVisible(true);
